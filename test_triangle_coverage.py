@@ -6,7 +6,7 @@ Script: Testing triangle classification
 
 import unittest
 #this pulls function in from the other file:
-from triangle import classify_triangle  
+from triangle_coverage import classify_triangle  
  
 class ClassifyTriangleTest(unittest.TestCase):
     """testing function classify_triangle"""
