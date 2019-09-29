@@ -8,7 +8,7 @@
     
     
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for triangle_coverage.py: 92%</title>
+    <title>Coverage for triangle_coverage.py: 100%</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -24,15 +24,15 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>triangle_coverage.py</b> :
-            <span class="pc_cov">92%</span>
+            <span class="pc_cov">100%</span>
         </h1>
 
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
 
         <h2 class="stats">
-            13 statements &nbsp;
-            <span class="run hide_run shortkey_r button_toggle_run">12 run</span>
-            <span class="mis shortkey_m button_toggle_mis">1 missing</span>
+            11 statements &nbsp;
+            <span class="run hide_run shortkey_r button_toggle_run">11 run</span>
+            <span class="mis shortkey_m button_toggle_mis">0 missing</span>
             <span class="exc shortkey_x button_toggle_exc">0 excluded</span>
 
             
@@ -79,8 +79,8 @@
 <p id="n10" class="stm run hide_run"><a href="#n10">10</a></p>
 <p id="n11" class="stm run hide_run"><a href="#n11">11</a></p>
 <p id="n12" class="stm run hide_run"><a href="#n12">12</a></p>
-<p id="n13" class="stm run hide_run"><a href="#n13">13</a></p>
-<p id="n14" class="stm mis"><a href="#n14">14</a></p>
+<p id="n13" class="pln"><a href="#n13">13</a></p>
+<p id="n14" class="pln"><a href="#n14">14</a></p>
 <p id="n15" class="stm run hide_run"><a href="#n15">15</a></p>
 <p id="n16" class="pln"><a href="#n16">16</a></p>
 <p id="n17" class="pln"><a href="#n17">17</a></p>
@@ -112,8 +112,8 @@
 <p id="t10" class="stm run hide_run">        <span class="key">return</span> <span class="str">'Equilateral'</span><span class="strut">&nbsp;</span></p>
 <p id="t11" class="stm run hide_run">    <span class="key">elif</span> <span class="op">(</span><span class="nam">a</span> <span class="op">==</span> <span class="nam">b</span><span class="op">)</span> <span class="key">or</span> <span class="op">(</span><span class="nam">b</span> <span class="op">==</span> <span class="nam">c</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
 <p id="t12" class="stm run hide_run">        <span class="key">return</span> <span class="str">'Isoceles'</span><span class="strut">&nbsp;</span></p>
-<p id="t13" class="stm run hide_run">    <span class="key">elif</span> <span class="op">(</span> <span class="nam">a</span> <span class="op">+</span> <span class="nam">b</span> <span class="op">&lt;=</span> <span class="nam">c</span> <span class="key">and</span> <span class="nam">b</span> <span class="op">+</span> <span class="nam">c</span> <span class="op">&lt;=</span> <span class="nam">a</span> <span class="key">and</span> <span class="nam">a</span> <span class="op">+</span> <span class="nam">c</span> <span class="op">&lt;=</span> <span class="nam">b</span> <span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t14" class="stm mis">        <span class="key">return</span> <span class="str">'Not A Triangle'</span><span class="strut">&nbsp;</span></p>
+<p id="t13" class="pln">    <span class="com"># elif ( a + b &lt;= c and b + c &lt;= a and a + c &lt;= b ):</span><span class="strut">&nbsp;</span></p>
+<p id="t14" class="pln">    <span class="com">#     return 'Not A Triangle'</span><span class="strut">&nbsp;</span></p>
 <p id="t15" class="stm run hide_run">    <span class="key">elif</span> <span class="nam">any</span><span class="op">(</span><span class="op">[</span><span class="strut">&nbsp;</span></p>
 <p id="t16" class="pln">        <span class="nam">all</span><span class="op">(</span><span class="op">[</span><span class="nam">a</span><span class="op">></span><span class="nam">b</span><span class="op">,</span> <span class="nam">a</span><span class="op">></span><span class="nam">c</span><span class="op">,</span> <span class="op">(</span><span class="nam">a</span><span class="op">**</span><span class="num">2</span><span class="op">)</span><span class="op">==</span><span class="op">(</span><span class="op">(</span><span class="nam">c</span><span class="op">**</span><span class="num">2</span><span class="op">)</span><span class="op">+</span><span class="op">(</span><span class="nam">b</span><span class="op">**</span><span class="num">2</span><span class="op">)</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
 <p id="t17" class="pln">        <span class="nam">all</span><span class="op">(</span><span class="op">[</span><span class="nam">c</span><span class="op">></span><span class="nam">b</span><span class="op">,</span> <span class="nam">c</span><span class="op">></span><span class="nam">a</span><span class="op">,</span> <span class="op">(</span><span class="nam">c</span><span class="op">**</span><span class="num">2</span><span class="op">)</span><span class="op">==</span><span class="op">(</span><span class="op">(</span><span class="nam">a</span><span class="op">**</span><span class="num">2</span><span class="op">)</span><span class="op">+</span><span class="op">(</span><span class="nam">b</span><span class="op">**</span><span class="num">2</span><span class="op">)</span><span class="op">)</span><span class="op">]</span><span class="op">)</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
@@ -140,7 +140,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.4</a>,
-            created at 2019-09-29 02:59
+            created at 2019-09-29 03:08
         </p>
     </div>
 </div>

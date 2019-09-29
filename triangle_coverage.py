@@ -10,8 +10,7 @@ def classify_triangle(a, b, c):
         return 'Equilateral'
     elif (a == b) or (b == c):
         return 'Isoceles'
-    elif ( a + b <= c and b + c <= a and a + c <= b ):
-        return 'Not A Triangle'
+    
     elif any([
         all([a>b, a>c, (a**2)==((c**2)+(b**2))]),
         all([c>b, c>a, (c**2)==((a**2)+(b**2))]),
